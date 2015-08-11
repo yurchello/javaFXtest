@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<company>
+    <consoleApp>
+        <fileName value="goldbug-main-batch-1.0-SNAPSHOT.jar"/>
+        <fileFolder value="D:\Java\GoldBug-8-10-2015\goldbug\goldbug-main-batch\target\"/>
+    </consoleApp>
+    <logFilePath>
+        <fileName value="logFile.csv"/>
+        <fileFolder value="D:/Java/GoldBug-8-10-2015/goldbug/goldbug-test-batch/"/>
+    </logFilePath>
+    <batchSource>
+        <fileName value="batchEmpty.xml"/>
+        <fileFolder value="D:/Java/GoldBug-8-10-2015/goldbug/goldbug-test-batch/"/>
+    </batchSource>
+    <batchFile>
+        <fileName value="batch.xml"/>
+        <fileFolder value="D:/"/>
+    </batchFile>
+    <etalonFileInfo>
+        <fileName value="etalon.xml"/>
+        <fileFolder value="D:/Java/GoldBug-8-10-2015/goldbug/goldbug-test-batch/"/>
+    </etalonFileInfo>
+    <testInfo>
+        <convertedInfo>
+            <schema value="GOLD_DEMO_ORA"/>
+            <!--<category value="Tables"/>-->
+            <!--<object value="ACCOUNTSTATEs"/>-->
+        </convertedInfo>
+        <etalonInfo>
+            <schema value="GOLD_DEMO_ORA"/>
+            <!--<category value="Tables"/>-->
+            <!--<object value="ACCOUNTSTATE"/>-->
+           </etalonInfo>
+        <!-- Set attributes names that would be tested, for exmpl. : engine="" -->
+        <allowList>
+            <table context="" name=""/>
+            <category   name="" order-num=""/>
+        </allowList>
+        <!-- Set default to "default" scanning, set "only_current_nodes" value to scanning ONLY current nodes -->
+        <deepInnore deep="default"/>
+    </testInfo>
+       <fileToCompare>
+           <fileName value="toCompare.xml"/>
+           <fileFolder value="D:/Java/GoldBug-8-10-2015/goldbug/goldbug-test-batch/"/>
+       </fileToCompare>
+       <projectInfo>
+           <projectName value="GoldBug Project_07-17-2015-13-46-30-861.gb"/>
+           <projectFolder value="C:/Users/mezentsev.y/GoldBug/Projects/GoldBug Project_07-17-2015-13-46-30-861/"/>
+       </projectInfo> <!--C:/Users/mezentsev.y/GoldBug/Projects/New folder/   New folder.gb-->
+                      <!--C:/Users/mezentsev.y/GoldBug/Projects/GoldBug Project_07-17-2015-13-46-30-861    GoldBug Project_07-17-2015-13-46-30-861.gb/-->
+       <sourceConnection>
+           <vendor value="ORCL"/>
+           <connectionString value="gboracle.cjj06khxetlc.us-west-2.rds.amazonaws.com"/>
+           <login value="gbuser"/>
+           <password value="Dataaccesspassword!!!"/>
+           <port value="1521"/>
+       </sourceConnection>
+       <targetConnection>
+           <vendor value="MYSQL"/>
+           <connectionString value="gbmymssql.cjj06khxetlc.us-west-2.rds.amazonaws.com"/>
+           <login value="gbuser"/>
+           <password value="Dataaccesspassword!!!"/>
+           <port value="3306"/>
+       </targetConnection>
+   </company>
